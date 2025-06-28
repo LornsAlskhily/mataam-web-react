@@ -5,7 +5,7 @@
 ##
 ##
 # username and pasword is :
-## "lorns" , "1234
+## "lorns" , "1234"
 ## "barjas" , "1111"
 
 note : The website is still under development.
