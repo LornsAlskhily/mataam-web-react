@@ -1,0 +1,292 @@
+*{
+    font-family: "MV Boli" , Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+body{
+    background-image: linear-gradient(to right,#f59402 ,rgb(250, 162, 0));
+    height: 100vh;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+#root{
+    height: 100%;
+}
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 10px 6%;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #e28801;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.411);
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 10px black;
+    color: white;
+    
+}
+header .logo{
+    display: flex;
+}
+header .logo div{
+    text-transform: uppercase;   
+    margin: auto;
+}
+header .logo img{
+    width: 38px;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;;
+    justify-content: space-around;
+    width: 600px;
+    font-size: 25px;
+}
+.nav ul li{
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    text-transform: capitalize;
+    margin-right: 7px;
+}
+.nav ul li:hover{
+    border-color: rgba(255, 255, 255, 0.74);
+}
+
+#accunt-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;  
+    border:2px solid;
+}
+
+
+#accunt-nav  img{
+    width: 30px;
+    border: solid 2px silver;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 15px;    
+}
+
+#logout-btn{
+   letter-spacing: 1px;
+   cursor: pointer;
+   user-select: none;
+}
+
+/* login screen */
+
+.login-contant{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    
+}
+.login-contant .logo {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.login-contant .logo img{
+    width: 360px;
+    margin: auto;
+}
+
+.login-contant .logo div{
+    font-size: 135px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+.login-contant form{
+    display: flex;
+    flex-direction: column;
+    background-color:#b96f0094 ;
+    padding: 60px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: -7px 7px 20px 5px rgba(0, 0, 0, 0.692);
+    border: 1px solid #b96f0085;
+}
+.login-contant form>*{
+    margin-top: 20px;
+    text-shadow: -1px 2px 10px black;
+    
+
+}
+.login-contant form h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.login-contant form .inpt {
+    font-size: 20px;
+    border-radius: 28px;
+    padding: 7px 10px;
+    width: 95%;
+    background-color:#e28801;
+    border:2px rgba(255, 255, 255, 0.966) solid;
+    margin-bottom:20px;
+    transition: all 0.4s;
+}
+.login-contant form .inpt::placeholder{
+    color: rgba(255, 255, 255, 0.603);
+    text-transform: capitalize;
+}
+.login-contant form .inpt:focus{
+    box-shadow: 0px 2px 10px 3px black;
+    border:2px rgba(255, 255, 255, 0.966) solid;
+}
+.login-contant form img{
+    width: 22px;
+    transition: all 0.4s;
+}
+.login-contant form label {
+    position: relative;    
+    width: 100%;
+}
+.login-contant form img{
+    position: absolute;
+    right:15px;
+    top: 13px;
+}
+.login-contant form .inpt:hover{
+        background-color:#c57600;
+
+}
+.login-contant form .inpt:hover +img {
+    transform: scale(0%);
+}
+.login-contant form .inpt:focus +img {
+    transform: scale(0%);
+}
+
+.login-contant form #checked-label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+.login-contant form #checked-label span{
+    margin-left: 12px;
+    display: block;
+    user-select: none;
+}
+
+.login-contant form #checked-label input{
+    display: block;
+    border-radius: 5px;
+}
+.login-contant .login-screen button{
+    background-color: white;
+    border-radius: 25px;
+    padding: 2px;
+    font-size: 25px;
+    border: rgba(0, 0, 0, 0.616) solid 2px;
+    color: black;
+    letter-spacing: 2px;
+    text-shadow: none;
+    font-weight: 700;
+    transition: all 0.4s;
+    position: relative;
+    
+}
+/* .login-contant .login-screen button::after{
+    position: absolute;
+    width: calc(100% - 40px);
+    height:70%;
+    bottom: -70%;
+    border-radius: 0px 0px 10px 10px;
+    right: 20px;
+    font-size: 15px;
+    content: "your username or password is worng";
+    background-color: rgba(255, 0, 0, 0.712);
+} */
+.login-contant .login-screen button:hover{
+    box-shadow: 0px 2px 10px 2px black;
+    cursor: pointer;
+    user-select: none;
+}
+.login-contant .login-screen button:active{
+    box-shadow: 0px 2px 10px 2px black;
+    background-color: rgba(245, 245, 245, 0.596);
+}
+
+.login-contant .login-screen #reg{
+    font-size: 15px;
+    margin-top: 15px;
+}
+.login-contant .login-screen #reg a{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width : 1550px){
+    #root .login-contant>*{
+        transform: scale(85%);
+     }
+
+
+}
+
+
+@media screen and (max-width : 1280px){
+    .logo div{
+        font-size: 25px;
+    }
+    .logo img{
+        width: 30px;
+    }
+    .nav ul {
+        font-size: 20px;
+    }
+     
+     #root .login-contant>*{
+        transform: scale(75%);
+     }
+    
+}
+@media screen and (max-width : 1100px){
+    header{
+        padding: 5px 3%;
+    }
+    .logo div{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 23px;
+    }
+    .nav ul {
+        font-size: 17px;
+        width: 550px;
+    }
+     #root .login-contant>*{
+        transform: scale(65%);
+     }
+     .login-contant .logo{
+        margin-left: -50px;
+     }
+}

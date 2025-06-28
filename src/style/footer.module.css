@@ -1,0 +1,11 @@
+.footerContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.918);
+    padding: 20px 150px 5px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.footerContainer p{
+    margin-bottom: 12px;
+}
